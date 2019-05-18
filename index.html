@@ -117,18 +117,36 @@
         <section class="modal modal-login">
           <h2>Личный кабинет</h2>
           <p>Введите пожалуйста свой логин и пароль</p>
-          <!-- Здесь будет форма -->
-          <span class="modal-close">x</span>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="login-item">
+               <label class="visually-hidden">
+                Логин
+                <input class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
+                </label>
+            </p>
+            <p class="login-item">
+                <label class="visually-hidden">
+                    Пароль
+                    <input class="login-icon-password" type="password" name="password" value="" placeholder="Пароль">
+                </label>
+            </p>
+            <p class="modal-login-item">
+                <label>
+                    <input type="checkbox" name="remember" value="" checked="">
+                    Запомните меня
+                </label>
+            </p>
+            <p>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button login-button" type="submit">Войти</button>
+          </form>
         </section>
 
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-<<<<<<< HEAD
           <img src="img/map.jpg" alt="Адрес Барбершопа Бородинский: город Санкт-Петербург, Большая Конюшенная улица 19" width="766" height="560">
           <button class="modal-close" type="button">Закрыть</button>
-=======
-          <span class="modal-close">x</span>
->>>>>>> parent of 0e2a3aa... Добавляет форму записи, форму входа, контентные изображения
         </section>
     </body>
 </html>
