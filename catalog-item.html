@@ -35,11 +35,11 @@
         <section class="product-photos">
             <h2 class="visually-hidden">Изображения товара</h2>
             <p class="product-photo-full">
-                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+                <img src="img/product-1-big.png" width="460" height="498" alt="Фото всего набора">
             </p>
-            <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
-            <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
-            <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+            <img src="img/product-1-small-1.png" width="140" height="149" alt="Фото в анфас">
+            <img src="img/product-1-small-2.png" width="140" height="149" alt="Фото в профиль">
+            <img src="img/product-1-small-3.png" width="140" height="149" alt="Фото отдельной части">
         </section>
 
 
@@ -84,10 +84,33 @@
     </footer>
 
     <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="login-item">
+               <label class="visually-hidden">
+                Логин
+                <input class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
+                </label>
+            </p>
+            <p class="login-item">
+                <label class="visually-hidden">
+                    Пароль
+                    <input class="login-icon-password" type="password" name="password" value="" placeholder="Пароль">
+                </label>
+            </p>
+            <p class="modal-login-item">
+                <label>
+                    <input type="checkbox" name="remember" value="" checked="">
+                    Запомните меня
+                </label>
+            </p>
+            <p>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button login-button" type="submit">Войти</button>
+        </form>
+        <button class="button modal-close" type="button">Закрыть</button>
     </section>
 </body>
 </html>
